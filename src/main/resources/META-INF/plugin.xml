@@ -1,0 +1,34 @@
+<idea-plugin>
+    <id>tk.darknessdev.intellij.SimpleActions</id>
+    <name>Simple Actions</name>
+    <vendor email="support@darknessdev.tk" url="https://darknessdev.tk">Darkness Development</vendor>
+
+    <description><![CDATA[
+    Just a simple sample of actions.<br>
+    <em>-Simple balloon message;</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+
+        <group id="SimpleActions.TopMenu"
+               text="_MyTopMenu"
+               description="SimpleActions Menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="MyAction"
+                    class="MyNotifications.MyBalloonMsg"
+                    text="_Show Balloon"
+                    description="Balloon description"/>
+        </group>
+    </actions>
+</idea-plugin>

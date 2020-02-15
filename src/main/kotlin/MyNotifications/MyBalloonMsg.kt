@@ -20,6 +20,16 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 
 class MyBalloonMsg: AnAction() {
+
+    override fun update(e: AnActionEvent) {
+        super.update(e)
+        // Below code added for action to be 100% enabled
+        // As there is a ?bug? but for default it`s shown but
+        // in disabled state.
+        e.presentation.isEnabled = true
+
+    }
+
     override fun actionPerformed(e: AnActionEvent) {
 
         val myBalloon = NotificationGroup("simpleActions.myBalloon", NotificationDisplayType.BALLOON, true)

@@ -38,11 +38,21 @@
                text="_MyTopMenu"
                description="SimpleActions Menu">
             <add-to-group group-id="MainMenu" anchor="last"/>
+            <!-- Balloon -->
             <action id="MyNotifications.MyBalloonMsg"
                     class="MyNotifications.MyBalloonMsg"
                     text="_Show Balloon"
                     description="Balloon description"/>
+
+            <!-- MessageBox -->
+            <action id="MyNotifications.MyMessageBox"
+                    class="MyNotifications.MyMessageBox"
+                    text="_MessageBox"
+                    description="Example of a MessageBox">
+            </action>
+
         </group>
 
     </actions>
+
 </idea-plugin>

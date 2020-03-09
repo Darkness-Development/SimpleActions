@@ -15,7 +15,7 @@ package services
 import com.intellij.openapi.components.ServiceManager
 
 /**
- * TODO Find out what this thig for...
+ * TODO Find out what this thing for...
  * Interface for Application level plugin.
  */
 interface MyAppService {
@@ -23,4 +23,8 @@ interface MyAppService {
         val instance: MyAppService?
             get() = ServiceManager.getService(MyAppService::class.java)
     }
+
+    fun isANewVersion(): Boolean
+
+
 }

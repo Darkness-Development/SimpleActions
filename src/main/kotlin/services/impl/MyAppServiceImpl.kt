@@ -22,4 +22,8 @@ import services.MyAppService
  */
 class MyAppServiceImpl : MyAppService {
 
+    override fun isANewVersion(): Boolean {
+        return true
+    }
+
 }

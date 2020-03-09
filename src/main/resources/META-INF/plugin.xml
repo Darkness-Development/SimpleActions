@@ -29,6 +29,8 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <applicationService serviceInterface="services.MyAppService"
+                            serviceImplementation="services.impl.MyAppServiceImpl"/>
     </extensions>
 
     <actions>

@@ -21,9 +21,10 @@ import com.intellij.openapi.components.service
 import services.MyAppService
 
 /**
- * TODO Seems to be used on 2019.3 and above (through plugin.xml)
- * Need to find out hoe to connect on 2019.2
  * Try to show message on application start up...
+ * On 2019.2 and beyond listeners connected through extensions
+ * in plugin.xml applicationInitializedListener is the name of
+ * extension for this listener interface.
  */
 class MyApplicationListener : ApplicationInitializedListener {
 

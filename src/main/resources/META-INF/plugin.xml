@@ -29,6 +29,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <applicationInitializedListener implementation="listeners.MyApplicationListener"/>
         <applicationService serviceInterface="services.MyAppService"
                             serviceImplementation="services.impl.MyAppServiceImpl"/>
     </extensions>
